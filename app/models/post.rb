@@ -4,3 +4,4 @@ class Post < ActiveRecord::Base
   validates :summary, length: { maximum: 250 }
   validates :category, :presence => true, :inclusion => { :in => ["Fiction", "Non-Fiction"] }
   validates :title, :exclusion => { :in => ["Won't Believe", "Secret", "Top [number]","Guess"] }
+end
